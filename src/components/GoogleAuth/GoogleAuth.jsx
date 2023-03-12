@@ -8,14 +8,7 @@ const GoogleAuth = () => {
   const handleCallbackResponse = (response) => {
     let userObject = jwt_decode(response.credential);
     if (userObject) {
-      const { name, picture, sub } = userObject;
       document.getElementById("login").innerHTML = `Hello ${userObject.name}`;
-      const userData = {
-        userName: name,
-        userImage: picture,
-        userId: sub,
-      };
-      console.log(userData);
       navigate("/");
     }
   };

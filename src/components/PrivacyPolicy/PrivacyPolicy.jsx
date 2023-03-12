@@ -40,7 +40,7 @@ export default function PrivacyPolicy() {
       <p className="policies__description">
         You have the right to request access to the personal information we have
         collected about you, and to request that we correct, amend, or delete
-        that information. You can contact us at {" "}
+        that information. You can contact us at{" "}
         <a className="policies__link" href="mailto:email@gmail.com">
           email@gmail.com
         </a>{" "}
@@ -55,7 +55,7 @@ export default function PrivacyPolicy() {
       <h3 className="policies__subtitle">Contact Us</h3>
       <p className="policies__description">
         If you have any questions or concerns about this Privacy Policy or our
-        data practices, you can contact us at {" "}
+        data practices, you can contact us at{" "}
         <a className="policies__link" href="mailto:email@gmail.com">
           email@gmail.com
         </a>

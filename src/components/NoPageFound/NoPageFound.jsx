@@ -13,7 +13,11 @@ const NoPageFound = () => {
         <FontAwesomeIcon icon={faArrowLeft} className="no-page-found__icon" />{" "}
         Return to homepage
       </button>
-      <img src={noPageFoundImage} alt="No Page Found" className="no-page-found__image" />
+      <img
+        src={noPageFoundImage}
+        alt="No Page Found"
+        className="no-page-found__image"
+      />
       <h1 className="no-page-found__title">Oops! Page not found</h1>
       <p className="no-page-found__message">
         The page you are looking for might have been removed, had its name

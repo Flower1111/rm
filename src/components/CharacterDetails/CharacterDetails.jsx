@@ -7,10 +7,11 @@ import "./CharacterDetails.scss";
 import Spinner from "../Spinner/Spinner";
 
 function CharacterField(props) {
+  const { label, value } = props;
   return (
     <div className="characterField">
-      <span className="characterField__label">{props.label}</span>
-      <span className="characterField__value">{props.value}</span>
+      <span className="characterField__label">{label}</span>
+      <span className="characterField__value">{value}</span>
       <hr className="characterField__underline" />
     </div>
   );
@@ -57,10 +58,7 @@ function CharacterDetails() {
 
         <CharacterField label="Gender" value={character.gender || "unknown"} />
         <CharacterField label="Status" value={character.status || "unknown"} />
-        <CharacterField
-          label="Specie"
-          value={character.species || "unknown"}
-        />
+        <CharacterField label="Specie" value={character.species || "unknown"} />
         <CharacterField
           label="Origin"
           value={character.origin.name || "unknown"}

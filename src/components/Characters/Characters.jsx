@@ -41,11 +41,7 @@ function Characters({ characters }) {
   }
   return (
     <div className="wrapper">
-      <div id="login" className="login">
-        {" "}
-        LOGIN
-      </div>
-
+      <div id="login" className="login"></div>
       <GoogleAuth />
       <img src={logo} alt="Logo" className="wrapper__logo" />
       <div className="characters">

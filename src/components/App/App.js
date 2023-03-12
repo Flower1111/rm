@@ -30,7 +30,7 @@ function App() {
   }, [characters]);
 
   return (
-    <div className="app">
+    <>
       <Routes>
         <Route path="/" element={<Characters characters={characters} />} />
         <Route path="/character/:id" element={<CharacterDetails />} />
@@ -39,7 +39,7 @@ function App() {
         <Route path="*" element={<NoPageFound />} />
       </Routes>
       <Footer />
-    </div>
+    </>
   );
 }
 
